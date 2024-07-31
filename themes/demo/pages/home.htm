@@ -1,0 +1,19 @@
+title = "Home"
+url = "/"
+layout = "default"
+
+[session]
+
+[account]
+redirect = ""
+paramCode = "code"
+
+[game]
+
+==
+
+{% if user %}
+    {% component game %}
+{% else %}
+    {% component account %}
+{% endif %}
